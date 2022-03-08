@@ -13,6 +13,7 @@ class TwoDAirElement(object):
         self.VelocityVector = [0,0,0]
 
         self.BCVelocity = ['None','None','None','None']
+        self.BCPressure = ['None','None','None','None']
 
 
 
@@ -50,7 +51,10 @@ for i in range(len(Elements)):
         
 #### inlett and outlett
 Elements[1].BCVelocity = ['None','None','None',1]
+Elements[1].BCPressure = ['None','None','None',100E3]
 Elements[-2].BCVelocity = ['None','None','None','None']
+Elements[-2].BCPressure = ['None',100E3,'None','None']
+
 
 
 """ for i in Elements:
